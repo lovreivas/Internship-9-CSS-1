@@ -253,7 +253,7 @@ a {
     font-weight: 500;
 }
 
-
+/* SALE SECTION */
 .sale-section {
     width: 100%;
     margin: 0 0 ;
@@ -454,6 +454,193 @@ a {
     transform: scale(1.2);
 }
 
+.best-sellers {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: lowercase;
+}
+
+.best-sellers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.best-seller-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.best-seller-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.best-seller-item p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.best-seller-item:hover p {
+    opacity: 0.6;
+}
+
+.furniture-section {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.furniture-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.furniture-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.furniture-header a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.furniture-header a:hover {
+    opacity: 0.6;
+}
+
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.furniture-item {
+    position: relative;
+}
+
+.furniture-item-images {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.furniture-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.furniture-item .hover-image {
+    opacity: 0;
+}
+
+.furniture-item:hover .hover-image {
+    opacity: 1;
+}
+
+.furniture-info {
+    padding: 15px 0;
+}
+
+.furniture-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.furniture-info h3:hover {
+    opacity: 0.6;
+}
+
+.furniture-info p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.furniture-info .price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.color-options {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-dot:hover {
+    transform: scale(1.2);
+}
+
+.seasonal {
+    max-width: 100%;
+    margin: 60px 0;
+}
+
+.seasonal-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 0 20px 20px;
+    scroll-behavior: smooth;
+}
+
+.seasonal-item {
+    min-width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.seasonal-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.seasonal-item:hover img {
+    transform: scale(1.05);
+}
+
+.seasonal-item p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-menu {
@@ -488,6 +675,14 @@ a {
         padding: 10px 25px;
         font-size: 13px;
     }
+
+    .best-sellers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .furniture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -510,6 +705,14 @@ a {
 
     .highlight-item {
         min-width: 220px;
+    }
+
+    .seasonal-item {
+        min-width: 280px;
+    }
+
+    .furniture-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -541,5 +744,9 @@ a {
 
     .highlight-item {
         min-width: 180px;
+    }
+
+    .seasonal-item {
+        min-width: 240px;
     }
 }
