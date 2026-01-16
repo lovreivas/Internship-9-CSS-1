@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the MUJI Online Store | MUJI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 1. ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-content">
+            <a href="https://www.muji.eu/sale/markdown" class="announcement-item">SALE - Up to 50% off selected lines</a>
+            <a href="https://www.muji.eu/pages/frequently-asked-questions/returns-refunds.html" class="announcement-item">Holiday Extended Returns Policy</a>
+            <a href="https://www.muji.eu/pages/refer-a-friend.html" class="announcement-item">Refer-A-Friend Rewards</a>
+            <a href="https://www.muji.eu/pages/frequently-asked-questions/delivery-questions.html" class="announcement-item">We ship to most EU countries, Switzerland & Norway</a>
+            <a href="https://www.muji.eu/pages/muji-membership.html" class="announcement-item">MUJI Membership</a>
+            <a href="https://www.muji.eu/" class="announcement-item">無印良品</a>
+        </div>
+    </div>
+
+    <!-- 2. NAVIGATION -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <a href="#">
+                    <img src="https://cdn11.bigcommerce.com/s-36unquhwg5/stencil/e694ebc0-be15-013e-5bca-1ef4e2705301/img/logos/logo-inline-black.svg" alt="MUJI">
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="https://www.muji.eu/sale">Sale</a></li>
+                <li><a href="https://www.muji.eu/women">Women</a></li>
+                <li><a href="https://www.muji.eu/men">Men</a></li>
+                <li><a href="https://www.muji.eu/home">Homeware</a></li>
+                <li><a href="https://www.muji.eu/furniture">Furniture</a></li>
+                <li><a href="https://www.muji.eu/stationery">Stationery</a></li>
+                <li><a href="https://www.muji.eu/beauty">Beauty</a></li>
+                <li><a href="https://www.muji.eu/travel">Travel</a></li>
+                <li><a href="https://www.muji.eu/gifts">Gift Guide</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <span class="nav-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                </span>
+                <span class="nav-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <span class="nav-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="https://cdn11.bigcommerce.com/s-36unquhwg5/stencil/e694ebc0-be15-013e-5bca-1ef4e2705301/img/logos/logo-inline-black.svg" alt="MUJI" style="height: 30px;">
+            <button class="close-menu" onclick="toggleMobileMenu()">×</button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="https://www.muji.eu/sale">Sale</a></li>
+            <li><a href="https://www.muji.eu/women">Women</a></li>
+            <li><a href="https://www.muji.eu/men">Men</a></li>
+            <li><a href="https://www.muji.eu/home">Homeware</a></li>
+            <li><a href="https://www.muji.eu/furniture">Furniture</a></li>
+            <li><a href="https://www.muji.eu/stationery">Stationery</a></li>
+            <li><a href="https://www.muji.eu/beauty">Beauty</a></li>
+            <li><a href="https://www.muji.eu/travel">Travel</a></li>
+            <li><a href="https://www.muji.eu/gifts">Gift Guide</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
