@@ -79,7 +79,133 @@
         </ul>
     </div>
 
+    <!-- SALE SECTION -->
+    <section class="sale-section">
+        <div class="sale-content">
+            <div class="sale-header">
+                <h2>SALE</h2>
+                <p class="sale-subtitle">Up to</p>
+                <p class="sale-percentage">50% off</p>
+                <p class="sale-description">Selected lines</p>
+                <p class="sale-new">New Lines Added</p>
+            </div>
+            <div class="sale-grid">
+                <a href="https://www.muji.eu/sale/markdown/women" class="sale-item">
+                    <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-eoss-women-864x1080-.jpg" alt="Women Sale">
+                    <p>Women</p>
+                </a>
+                <a href="https://www.muji.eu/sale/markdown/men" class="sale-item">
+                    <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-eoss-men-864x1080-.jpg" alt="Men Sale">
+                    <p>Men</p>
+                </a>
+                <a href="https://www.muji.eu/sale/markdown/home" class="sale-item">
+                    <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-eoss-home-864x1080-.jpg" alt="Home Sale">
+                    <p>Home</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. HIGHLIGHTS SECTION -->
+    <section class="highlights">
+        <h2 class="highlights-title">Highlights</h2>
+        <div class="highlights-scroll">
+            <a href="https://www.muji.eu/stationery/organisation/diaries-planners-and-calendars" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-new-arrivals-diaries-781x1080-01.jpg" alt="2026 Diaries & Calendars">
+                <p>2026 Diaries & Calendars</p>
+            </a>
+            <a href="https://www.muji.eu/home/cooking-and-dining" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/26ss-cooking-dining-freezer-bags-864x864-.jpg" alt="Cooking & Dining">
+                <p>Cooking & Dining</p>
+            </a>
+            <a href="https://www.muji.eu/home/storage" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-storage-864x864-01.jpg" alt="Storage">
+                <p>Storage</p>
+            </a>
+            <a href="https://www.muji.eu/home/utility/cleaning" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/cleaning-system-1920x1080-.jpg" alt="Cleaning System">
+                <p>Cleaning System</p>
+            </a>
+            <a href="https://www.muji.eu/furniture/shelving-units" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-shelving-unit-864x864-01.jpg" alt="Shelving Units">
+                <p>Shelving Units</p>
+            </a>
+            <a href="https://www.muji.eu/stationery/pens-and-pencils" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-pens-pencils-864x864-01.jpg" alt="Pens & Pencils">
+                <p>Pens & Pencils</p>
+            </a>
+            <a href="https://www.muji.eu/travel" class="highlight-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-travel-864x864-01.jpg" alt="Travel">
+                <p>Travel</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/26ss-hasami-tableware-1920x912-01.jpg?t=1768234142" alt="Hasami Porcelain">
+                <div class="hero-content">
+                    <h2>Hasami Porcelain</h2>
+                    <div class="hero-btns">
+                        <a href="https://www.muji.eu/home/cooking-and-dining/tableware" class="hero-link">Explore the collection</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-winter-essentials-main-1920x912.jpg?t=1765465135" alt="Winter Essentials">
+                <div class="hero-content">
+                    <h2>Winter Essentials</h2>
+                    <div class="hero-btns">
+                        <a href="https://www.muji.eu/women/essentials" class="hero-link">Women</a>
+                        <a href="https://www.muji.eu/men/essentials" class="hero-link">Men</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-controls">
+                <button class="hero-arrow" onclick="changeSlide(-1)">◄</button>
+                <div class="hero-dots">
+                    <button class="hero-dot active" onclick="goToSlide(0)"></button>
+                    <button class="hero-dot" onclick="goToSlide(1)"></button>
+                </div>
+                <button class="hero-arrow" onclick="changeSlide(1)">►</button>
+            </div>
+        </div>
+    </section>
+
     <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.hero-dot');
+
+        function showSlide(n) {
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            currentSlide += n;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('active');
