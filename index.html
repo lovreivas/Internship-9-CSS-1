@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the MUJI Online Store | MUJI</title>
     <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
     <!-- 1. ANNOUNCEMENT BAR -->
@@ -144,6 +145,7 @@
     <!-- 4. HERO SECTION -->
     <section class="hero">
         <div class="hero-carousel">
+            <!-- Slide 1: Hasami Porcelain -->
             <div class="hero-slide active">
                 <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/26ss-hasami-tableware-1920x912-01.jpg?t=1768234142" alt="Hasami Porcelain">
                 <div class="hero-content">
@@ -154,6 +156,7 @@
                 </div>
             </div>
 
+            <!-- Slide 2: Winter Essentials -->
             <div class="hero-slide">
                 <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-winter-essentials-main-1920x912.jpg?t=1765465135" alt="Winter Essentials">
                 <div class="hero-content">
@@ -165,13 +168,14 @@
                 </div>
             </div>
 
+            <!-- Carousel Controls -->
             <div class="hero-controls">
-                <button class="hero-arrow" onclick="changeSlide(-1)">◄</button>
+                <button class="hero-arrow" onclick="changeSlide(-1)">❮</button>
                 <div class="hero-dots">
                     <button class="hero-dot active" onclick="goToSlide(0)"></button>
                     <button class="hero-dot" onclick="goToSlide(1)"></button>
                 </div>
-                <button class="hero-arrow" onclick="changeSlide(1)">►</button>
+                <button class="hero-arrow" onclick="changeSlide(1)">❯</button>
             </div>
         </div>
     </section>
@@ -327,6 +331,99 @@
             </a>
         </div>
     </section>
+
+    <!-- 8. MUJI STORIES -->
+    <section class="stories">
+        <h2 class="section-title">MUJI Stories</h2>
+        <div class="stories-grid">
+            <a href="https://www.muji.eu/pages/muji-stories/christmas-simplicity-over-spectacle.html" class="story-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-japanese-christmas-1920x1440-01.jpg" alt="Christmas Story">
+                <div class="story-content">
+                    <h3>Christmas: Simplicity Over Spectacle</h3>
+                    <p>While in the West, Christmas has religious roots and often means family meals, extended holidays and presents under the tree, the Japanese interpretation is quite different.</p>
+                    <a href="https://www.muji.eu/pages/muji-stories/christmas-simplicity-over-spectacle.html">Read the story</a>
+                </div>
+            </a>
+            <a href="https://www.muji.eu/pages/muji-stories/autumn-in-japan.html" class="story-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/autumn-in-japan-1920x1440-01.jpg" alt="Autumn Story">
+                <div class="story-content">
+                    <h3>Autumn in Japan: A Season of Quiet Beauty</h3>
+                    <p>Like a peaceful transition between the flamboyance of summer and the glory of winter, Japanese autumn is a season of change.</p>
+                    <a href="https://www.muji.eu/pages/muji-stories/autumn-in-japan.html">Read the story</a>
+                </div>
+            </a>
+            <a href="https://www.muji.eu/pages/muji-stories/transform-your-space-into-a-zen-home-this-autumn.html" class="story-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/banner.jpeg" alt="Zen Home">
+                <div class="story-content">
+                    <h3>Transform Your Space into a Zen Home This Autumn</h3>
+                    <p>When home becomes a refuge on rainy afternoons and crisp Sunday mornings, mindful interiors cultivate the calm and clarity needed during cooler months.</p>
+                    <a href="https://www.muji.eu/pages/muji-stories/transform-your-space-into-a-zen-home-this-autumn.html">Read the story</a>
+                </div>
+            </a>
+            <a href="https://www.muji.eu/pages/muji-stories/the-art-of-simple-design.html" class="story-item">
+                <img src="https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/minimalist-design-864x1080-04.jpg" alt="Simple Design">
+                <div class="story-content">
+                    <h3>The art of simple design</h3>
+                    <p>Simple design is far from simplistic. It is a sophisticated language, a blend of engineering excellence, research, and a deep appreciation for beauty and generosity.</p>
+                    <a href="https://www.muji.eu/pages/muji-stories/the-art-of-simple-design.html">Read the story</a>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Shopping with MUJI</h4>
+                    <ul>
+                        <li><a href="https://www.muji.eu/pages/store-locator.html">Store Locator</a></li>
+                        <li><a href="https://www.muji.eu/pages/size-chart.html">Size Chart</a></li>
+                        <li><a href="https://www.muji.eu/pages/refer-a-friend.html">Refer A Friend</a></li>
+                        <li><a href="https://www.muji.eu/pages/re-muji.html">ReMUJI Upcycling Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="https://www.muji.eu/pages/frequently-asked-questions/delivery-questions.html">Delivery</a></li>
+                        <li><a href="https://www.muji.eu/pages/frequently-asked-questions/returns-refunds.html">Returns & Refunds</a></li>
+                        <li><a href="https://www.muji.eu/pages/contact-us.html">Contact Us</a></li>
+                        <li><a href="https://www.muji.eu/pages/gift-cards.html">Gift Cards</a></li>
+                        <li><a href="https://www.muji.eu/pages/frequently-asked-questions.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="https://www.muji.eu/pages/about-muji.html">About MUJI</a></li>
+                        <li><a href="https://www.muji.eu/pages/muji-materials.html">MUJI Materials</a></li>
+                        <li><a href="https://www.mujicareers.eu/index.muji">Careers at MUJI</a></li>
+                        <li><a href="https://www.muji.eu/pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="https://www.muji.eu/pages/terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="https://www.muji.eu/pages/cookies-policy.html">Cookies Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sustainability</h4>
+                    <ul>
+                        <li><a href="https://www.muji.eu/pages/sustainability.html">Our Philosophy</a></li>
+                    </ul>
+                    <h4 style="margin-top: 30px;">Find Us On Social Media</h4>
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="https://www.instagram.com/mujieurope/" target="_blank">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="https://cdn11.bigcommerce.com/s-36unquhwg5/stencil/e694ebc0-be15-013e-5bca-1ef4e2705301/img/logos/logo-gray.svg" alt="MUJI">
+                </div>
+                <p>MUJI EU - Ryohin Keikaku Europe Ltd © 2026</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
